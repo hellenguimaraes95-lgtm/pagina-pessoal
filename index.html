@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -88,6 +87,79 @@
             margin-bottom: 8px;
         }
 
+        /* Estilos do Formulário */
+        form fieldset {
+            border: 2px solid #f5d5e2;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        form legend {
+            color: #bd668c;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        .campo-grupo {
+            margin-bottom: 15px;
+        }
+
+        .campo-grupo label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #813d5b;
+        }
+
+        .campo-grupo input,
+        .campo-grupo textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #f5d5e2;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: #573746;
+        }
+
+        .campo-grupo input:focus,
+        .campo-grupo textarea:focus {
+            outline: none;
+            border-color: #bd668c;
+        }
+
+        .botoes-grupo {
+            text-align: right;
+        }
+
+        .botoes-grupo button {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .botoes-grupo button[type="submit"] {
+            background-color: #bd668c;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .botoes-grupo button[type="submit"]:hover {
+            background-color: #a74772;
+        }
+
+        .botoes-grupo button[type="reset"] {
+            background-color: #f5d5e2;
+            color: #813d5b;
+        }
+
+        .botoes-grupo button[type="reset"]:hover {
+            background-color: #e8a5bf;
+        }
+
         .links a {
             display: inline-block;
             color: #a74772;
@@ -125,6 +197,7 @@
         <a href="#sobre">Sobre mim</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#estudos">Estudos</a>
+        <a href="#contato">Contato</a>
         <a href="sobre.html">Outra página</a>
     </nav>
 
@@ -134,7 +207,7 @@
             <h2>Sobre mim</h2>
 
             <img
-                src="minhafoto.jpg.JPG"
+                src="minhafoto.JPG"
                 alt="Minha foto pessoal"
                 class="foto"
             >
@@ -184,10 +257,44 @@
             </p>
         </section>
 
+        <section id="contato">
+            <h2>Entre em contato</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Formulário de Contato</legend>
+
+                    <div class="campo-grupo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+
+                    <div class="botoes-grupo">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
         <section id="links">
             <h2>Meu Instagram ;)</h2>
 
-          
             <div class="links">
                 <a
                     href="https://www.instagram.com/hellen.guima/"
