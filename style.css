@@ -1,0 +1,169 @@
+/* Configurações Gerais e Corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Requisito 2: Cabeçalho e Títulos */
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #ecf0f1;
+}
+
+/* Requisito 7: Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Pseudoclasse :hover exigida no Requisito 7 */
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Requisito 6: Espaçamentos, dimensões e cores de fundo das seções */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* Requisito 4: Imagem pessoal */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Requisito 3: Listas e textos */
+.lista-interesses {
+    padding-left: 20px;
+}
+
+.lista-interesses li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Requisito 5: Estilização do Formulário de Contato */
+fieldset {
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    padding: 5px 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+.grupo-campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não estoure a largura */
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Botões do Formulário */
+.botoes button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #219653;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* Requisito 7: Rodapé */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+}
