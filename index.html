@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Página Pessoal - Hellen Guimarães</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Minha Página Pessoal</h1>
-        <p>Um pouco sobre mim, meus interesses e meus objetivos.</p>
+    <header class="cabecalho">
+        <div class="container header-flex">
+            <div class="header-titulo">
+                <h1>Minha Página Pessoal</h1>
+                <p>Um pouco sobre mim, meus interesses e meus objetivos.</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#estudos">Estudos</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="sobre.html">Outra página</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#sobre">Sobre mim</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#estudos">Estudos</a>
-        <a href="#tecnologias">Tecnologias</a>
-        <a href="#contato">Contato</a>
-        <a href="sobre.html">Outra página</a>
-    </nav>
+    <main class="container">
 
-    <main>
-
-        <section id="sobre">
-            <h2>Sobre mim</h2>
-
+        <section id="sobre" class="secao-sobre">
             <img
                 src="minhafoto.jpg"
                 alt="Minha foto pessoal"
-                class="foto"
+                class="foto-perfil"
             >
-
-            <p>
-                Olá! Meu nome é Hellen. Seja bem-vindo(a)
-                à minha página pessoal!
-            </p>
-
-            <p>
-                Sou uma pessoa que busca aprender coisas novas,
-                desenvolver minhas habilidades e crescer
-                pessoal e profissionalmente.
-            </p>
-
-            <p>
-                Nesta página compartilho um pouco sobre mim,
-                meus interesses, meus estudos e meus objetivos.
-            </p>
+            <div class="texto-sobre">
+                <h2>Sobre mim</h2>
+                <p>
+                    Olá! Meu nome é Hellen. Seja bem-vindo(a)
+                    à minha página pessoal!
+                </p>
+                <p>
+                    Sou uma pessoa que busca aprender coisas novas,
+                    desenvolver minhas habilidades e crescer
+                    pessoal e profissionalmente.
+                </p>
+                <p>
+                    Nesta página compartilho um pouco sobre mim,
+                    meus interesses, meus estudos e meus objetivos.
+                </p>
+            </div>
         </section>
 
-        <section id="hobbies">
+        <section id="hobbies" class="card">
             <h2>Meus hobbies e interesses</h2>
 
             <ul>
@@ -62,7 +65,7 @@
             </ul>
         </section>
 
-        <section id="estudos">
+        <section id="estudos" class="card">
             <h2>Meus estudos e objetivos</h2>
 
             <p>
@@ -139,7 +142,7 @@
             </div>
         </section>
 
-        <section id="contato">
+        <section id="contato" class="card">
             <h2>Entre em contato</h2>
 
             <form>
@@ -174,7 +177,7 @@
             </form>
         </section>
 
-        <section id="links">
+        <section id="links" class="card">
             <h2>Meu Instagram ;)</h2>
 
             <div class="links">
@@ -190,19 +193,21 @@
 
     </main>
 
-    <footer>
-        <p>Desenvolvido por Hellen Guimarães</p>
-        <p>Minha Página Pessoal - 2026</p>
+    <footer class="rodape">
+        <div class="container">
+            <p>Desenvolvido por Hellen Guimarães</p>
+            <p>Minha Página Pessoal - 2026</p>
 
-        <p>
-            <a
-                href="https://www.instagram.com/hellen.guima/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Meu Instagram
-            </a>
-        </p>
+            <p>
+                <a
+                    href="https://www.instagram.com/hellen.guima/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Meu Instagram
+                </a>
+            </p>
+        </div>
     </footer>
 
 </body>
